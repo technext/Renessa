@@ -1,5 +1,5 @@
-new WOW().init();
-	$(document).ready(function(){
+$(document).ready(function(){
+    new WOW().init();
 		$("#client-speech").owlCarousel
 		({
 			autoPlay: 3000,
@@ -11,10 +11,10 @@ new WOW().init();
 	});
 
 var menu = $('#navigation');
-var origOffsetY = menu.offset().top;
+
 
 function scroll() 
-{
+{ var origOffsetY = menu.offset().top;
    if ($(window).scrollTop() >= origOffsetY) 
    {
        $('#navigation').addClass('nav-wrap');
