@@ -80,11 +80,13 @@ li a
 {
     padding: 50px 0px;
 }
+
 img
 {
     max-width: 100%;
     height: auto;
 }
+
 iframe
 {
     width: 100%;
@@ -778,11 +780,26 @@ form
 /* ================================================================================================================
                         Media Query
 ================================================================================================================== */
-@media (max-width: 515px)
-{
+@media (max-width: 515px){
     .rene
     {
         font-size: 70px;
+    }
+}
+@media (max-width: 405px){
+    #heading-text h3
+    {
+        font-size: 45px;
+    }
+}
+@media (max-width: 350px){
+    .rene
+    {
+        font-size: 50px;
+    }
+    .starting-text h2
+    {
+        font-size: 35px;
     }
 }
 /* 
