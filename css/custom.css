@@ -23,6 +23,8 @@
 
 .navbar-default .navbar-toggle {
     border-color: rgba(221, 221, 221, 0);
+    margin: 0;
+    line-height: 100%;
 }
 
 .navbar-toggle {
@@ -33,6 +35,7 @@
 .navbar {
     margin-bottom: 0px;
     padding: 5px 15px;
+    min-height: 0;
 }
 
 button.navbar-toggle .ion-navicon {
@@ -43,6 +46,7 @@ button.navbar-toggle .ion-navicon {
 body
 {
     background: url(../img/pattern.png);
+    overflow-x: hidden;
 }
 .row
 {
@@ -107,12 +111,11 @@ iframe
 .navbar-default .navbar-nav>li>a 
 {
     font-family: 'Bitter', serif;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all 0.5s;
-    color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    font-size: 12px;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
+    color: #fff;
+    margin: 5px 20px;
+    padding: 0;
 }
 .navbar
 {
@@ -120,20 +123,17 @@ iframe
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
 {
-    background-color:rgba(58,87,83,0.62);
     color: rgb(209, 243, 71);
 }
 .navbar-default .navbar-brand 
 {
     color: white;
-    padding-top: 10px;
-    font-family: "Coda";
-    float: left;  padding: 10px 15px;  font-size: 18px;  line-height: 20px;  height: 40px;
+    font-family: "Coda";  
+    padding: 5px 15px;  font-size: 18px;  
+    line-height: 100%;  
+    height: auto;
 }
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
-{
-    color: rgb(209, 243, 71);
-}
+
 .nav-wrap 
 {
     position: fixed;
@@ -141,14 +141,14 @@ iframe
     width: 100%;
     z-index: 9999;
 }
-#starting
+#wrapper
 {
     background: url(../img/background.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
-#starting .row
+#overlay-1
 {
     background-color: rgba(0, 0, 0, 0.77);
 }
@@ -820,34 +820,12 @@ form
 
  */
 
- .ion-ios7-arrow-thin-down {
-font-size: 2em;
-/*padding: 4px 15px;*/
-border-radius: 35px;
-/*border: 1px solid #fff;*/
-color: #fff;
+.ion-ios7-arrow-down {
+    color: #fff;
+    font-size: 2em;
 }
 
-.ion-ios7-arrow-thin-down{
-        
-    -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-}
 
-@-webkit-keyframes Floatingx{
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
-    to {-webkit-transform: translate(0, -0px);    }    
-}
-    
-@-moz-keyframes Floating{
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 15px);}
-    to {-moz-transform: translate(0, -0px);}    
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #FFFFFF;
 }
