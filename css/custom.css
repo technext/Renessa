@@ -1,22 +1,77 @@
+@import url(omnes-pro.css);
+@import url(http://fonts.googleapis.com/css?family=Coda);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic);
+
+
+/*@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
 @import url(http://fonts.googleapis.com/css?family=Alegreya);
 @import url(http://fonts.googleapis.com/css?family=Kreon:700);
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
-@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
 @import url(http://fonts.googleapis.com/css?family=Philosopher);
 @import url(http://fonts.googleapis.com/css?family=Tinos);
 @import url(http://fonts.googleapis.com/css?family=Bitter);
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:200);
 @import url(http://fonts.googleapis.com/css?family=Merriweather);
-@import url(http://fonts.googleapis.com/css?family=Coda);
 @import url(http://fonts.googleapis.com/css?family=Lora);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);*/
 
 /*======================================================================================================
                             Global
 =======================================================================================================*/
+
+* {
+    outline: none !important;
+    box-shadow: none;
+}
+
+a {
+    color: rgb(32, 178, 170);
+}
+
+a:hover {
+    color: #000;
+}
+
+.btn {
+    border-radius: 0;
+    transition: background 0.5s cubic-bezier(.17,.67,.83,.67);
+}
+
+.navbar-white {
+    background-color: #fff !important;
+    transition: background 0.5s ease-out;
+
+}
+
+.navbar-white li a {
+    color: #16a085 !important;
+}
+
+.navbar-white .navbar-brand {
+    color: #16a085 !important;
+}
+
+.navbar-white button.navbar-toggle {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.navbar-white button.navbar-toggle .ion-navicon {
+    color: #000;
+}
+
+.form-control:focus {
+border-color: #3acab1;
+box-shadow: none;
+}
+
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: rgba(255, 255, 255, 0);
 }
@@ -34,7 +89,7 @@
 
 .navbar {
     margin-bottom: 0px;
-    padding: 5px 15px;
+    padding: 10px 5px;
     min-height: 0;
 }
 
@@ -43,11 +98,18 @@ button.navbar-toggle .ion-navicon {
     color: #fff;
 }
 
-body
-{
-    background: url(../img/pattern.png);
+body {
     overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
 }
+
+p {
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
 .row
 {
     margin-right: 0px;
@@ -66,20 +128,19 @@ li a
 {
     padding-top: 10px;
 }
-#heading-text h3
-{
-    font-size: 70px;
-    font-family: 'Bitter', serif;
-    color: #16a085;
+#heading-text h3 {
+    font-size: 49px;
+    font-family: 'Roboto', sans-serif;
     padding-top: 58px;
+    text-transform: uppercase;
 }
-#heading-text p
-{
+
+#heading-text p {
     font-size: 18px;
-    color: #16a085;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', sans-serif;
     padding: 5px 0px
 }
+
 .main_content 
 {
     padding: 50px 0px;
@@ -104,32 +165,34 @@ iframe
 -------------------------------------------------------------------------------------------------------*/
 #navigation, .navbar-default
 {
-    background-color: #1abc9c;
     border-radius: 0px;
-    border-color: cadetblue;
+    border: 0;
+    background-color: rgba(0,0,0,0.19);
 }
-.navbar-default .navbar-nav>li>a 
-{
-    font-family: 'Bitter', serif;
-    font-size: 12px;
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
     transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
-    color: #fff;
+    color: #E5E5E5;
     margin: 5px 20px;
     padding: 0;
+    line-height: 28px;
+    font-family: "Coda";
+    text-transform: capitalize;
 }
-.navbar
-{
+
+.navbar {
     margin-bottom: 0px;
 }
+
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
 {
-    color: rgb(209, 243, 71);
+    color: #fff;
 }
-.navbar-default .navbar-brand 
-{
-    color: white;
+.navbar-default .navbar-brand {
+    color: #fff;
     font-family: "Coda";  
-    padding: 5px 15px;  font-size: 18px;  
+    padding: 5px 15px;  
+    font-size: 26px;  
     line-height: 100%;  
     height: auto;
 }
@@ -150,8 +213,10 @@ iframe
 }
 #overlay-1
 {
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: rgba(40, 40, 40, 0.6);
+    position: relative;
 }
+
 .starting-text
 {
     padding: 177px 0px;
@@ -159,26 +224,24 @@ iframe
     text-shadow: 1px 1px 1px #000;
     letter-spacing: 2px;
 }
-.rene
-{
+.rene {
     font-size: 120px;
     color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 200;
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    font-weight: 300;
     margin-top: 75px;
 }
-.starting-text h2
-{
-    font-size: 40px;
-    color: #919799;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+
+.starting-text h2 {
+    font-family: "omnes-pro", "Helvetica", sans-serif;
+    color: #fff;
 }
+
 .bottom 
 {
     width: 100%;
-    position: relative;
-    bottom: 100px;
+    position: absolute;
+    bottom: 2%;
 }
 .bottom a
 {
@@ -222,18 +285,14 @@ Our service
 }
 .about-service 
 {
-    font-family: 'Alegreya', serif;
     font-size: 16px;
     padding: 5px 10px 0px 10px;
 }
-.about-service h3 
-{
+.about-service h3 {
     font-family: "Coda";
-    font-weight: bold;
     font-size: 33px;
-    text-shadow: 1px 1px 1px #FFF;
-    color: rgb(77, 175, 120);
 }
+
 .service-icon i 
 {
     padding: 20px 0px;
@@ -305,10 +364,12 @@ hr
 {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
+    margin-bottom: 5px;
 }
 .member-title
 {
     font-family: "Coda";
+    margin-bottom: 15px;
 }
 #team h2
 {
@@ -318,7 +379,7 @@ hr
 .team-member-description
 {
     text-align: center;
-    font-family: 'Alegreya', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 15px;
 }
 .team-member-description 
@@ -344,7 +405,7 @@ hr
 }
 .team-facebook, .team-twitter, .team-google-plus 
 {
-    color: cadetblue;
+    color: rgb(32, 178, 170);
 } 
 .team-facebook:hover
 {
@@ -363,7 +424,8 @@ hr
     color: #DD4C39;
 }
 .team-member-contact a {
-    padding: 0px 12px;
+    margin: 0px 12px;
+    transition: all 0.5s cubic-bezier(.17,.67,.83,.67);
 }
 /*-----------------------------------------------------------------------------------------------------
                             Works
@@ -383,6 +445,7 @@ hr
 {
     position: relative;
     z-index: 999;
+    margin-bottom: 15px;
 }
 .price-column .price-heading 
 {
@@ -462,11 +525,7 @@ hr
     line-height: 35px;
     transition: all 0.5s;
 }
-.price-content ul li:hover
-{
-    background-color: rgba(24, 24, 99, 0.39);
-    color: aqua;
-}
+
 .price-column.highlight 
 {
     margin-top: 0;
@@ -554,7 +613,7 @@ hr
     font-size: 33px;
     position: relative;
     top: 2px;
-    color: lightseagreen;
+    color: rgb(32, 178, 170);
 }
 a 
 {
@@ -571,12 +630,12 @@ a
     margin-top: 18px;
     padding-left: 70px;
 }
-#blog .post h2.title a 
-{
-    color: lightseagreen;
+#blog .post h2.title a {
+    color: rgb(32, 178, 170);
     text-transform: uppercase;
     font-weight: bold;
     text-shadow: 0 1px 1px #f7f7f6;
+    font-family: 'Dosis', sans-serif;
 }
 #blog .post h2.title 
 {
@@ -598,14 +657,7 @@ a
     margin-top: 19px;
     margin-bottom: 23px;
 }
-#blog .post .meta 
-{
-    margin-left: -10px;
-}
-#blog .post .meta strong 
-{
-    margin-left: 10px;
-}
+
 .post-share a 
 {
     padding: 0px 10px;
@@ -745,12 +797,12 @@ form
 -----------------------------------------------------------------------------------------------------*/
 .main-footer
 {
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(26, 26, 26, 1);
     padding: 20px 0px;
 }
 .logo h1
 {
-    color: darkcyan;
+    color: #F2F2F2;
     font-family: 'Titillium Web', sans-serif;
     font-size: 50px;
 }
@@ -758,7 +810,7 @@ form
 {
     margin-top: 10px; 
     font-size: 16px;
-    color: #006113;
+    color: #f3f3f3;
 }
 .copyright a:hover
 {
@@ -768,14 +820,14 @@ form
 }
 .copyright a
 {
-    color: #006113;
+    color: #FFFFFF;
 }
 .theme
 {
     font-family: "Coda";
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 5px;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+    /* padding-left: 5px; */
 }
 /* ================================================================================================================
                         Media Query
@@ -822,10 +874,210 @@ form
 
 .ion-ios7-arrow-down {
     color: #fff;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #FFFFFF;
 }
+
+.btn-primary {
+    color: #fff;
+    background-color: #3acab1;
+    border-radius: 0;
+    border-color: #3acab1;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: #3acab1;
+    border-color: #3acab1;
+}
+
+.pagination {
+    border-radius: 0;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    z-index: 99999;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+    color: #FFF;
+    background-color: #3acab1;
+    border-color: #3acab1;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #16a085;
+}
+
+#port-items .col-md-4 {
+    padding: 0;
+}
+
+.input-group-addon {
+    border-radius: 0;
+}
+
+@media (max-width: 712px) {
+
+}
+
+@media (max-width: 400px) {
+    #port-items .col-xs-6 {
+        width: 100%;
+    }
+
+    .navbar-fixed-top, 
+    .navbar-fixed-bottom {
+        position: static;
+    }
+
+    #portfolio .btn {
+        margin-bottom: 10px;
+    }
+}
+    
+    #price_table ul {
+        display:table;
+        margin: 0 auto;
+        width:100%;
+        max-width:1100px;
+    
+        padding: 0;
+}
+    #price_table li {
+        display:table-cell;
+        width:33.333%;
+        padding:43px 0 0;
+        transition: all 0.25s, color 0s !important;
+        position:relative;
+        z-index:0;
+        border:1px solid #BBB;
+    
+        background-color: #fff;
+}
+    
+    #price_table li:first-child {
+        position:relative;
+        right:-1px; 
+    }
+    #price_table li:last-child {
+        position:relative;
+        left:-1px;  
+    }
+
+    
+    #price_table li:hover {
+        box-shadow: 0 13px 48px rgba(0, 0, 0, 0.2);
+        z-index:1;
+        color:#fff;
+        background: #1abc9c;
+        border-color: #1abc9c;
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        transform: scale(1.05);
+    }
+    
+    #price_table li * {
+        transition: 0 !important;
+        text-decoration: none;
+}
+    
+    #price_table li:hover * {
+        color: #fff !important;
+        border-color:rgba(255, 255, 255, 0.27) !important;
+    }
+    
+    
+    
+    #price_table li strong {
+        font-size:19px;
+        text-transform:uppercase;
+        font-family: Raleway;
+        color: #2F3740;
+        letter-spacing:2.4px;
+        line-height:45px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        display: block;
+        text-align: center;
+}
+    
+    #price_table ul .price_table-description {
+        display:block;
+        font-size:19px;
+        line-height:30px;
+        text-align: center;
+        color: #6C6C6C;
+}
+    
+    #price_table .price_table-price {
+        font-size:84px;
+        letter-spacing:2px;
+        padding-top:20px;
+        display:block;
+        font-weight:400;
+        text-align: center;
+        padding-bottom:12px;
+        color: #6C6C6C;
+}
+    #price_table .price_table-button {
+        font-size:19px;
+        text-transform:uppercase;
+        font-family: 'Roboto', sans-serif;
+        color:#2F3740;
+        text-decoration:none;
+        line-height:1;
+        padding:28px 0 24px;
+        border-top:1px solid #bbb;
+        width:100%;
+        margin-top:6px;
+        display:block;
+        text-align: center;
+}
+    #price_table li:hover .price_table-button {
+        transition: 0;
+    }
+    
+    
+    #price_table ul a:hover {
+        color:#E85700;
+    }
+
+    ul.price-table-chart li:nth-child(2) {
+        box-shadow: 0 13px 48px rgba(0, 0, 0, 0.2) !important;
+        z-index: 2 !important;
+        color: #fff !important;
+        background: #1abc9c !important;
+        border-color: #1abc9c !important;
+        -webkit-transform:scale(1.05);
+        -moz-transform:scale(1.05);
+        transform: scale(1.05);
+    }
+
+    ul.price-table-chart li:nth-child(2) * {
+        color: #fff !important;
+    }
+
+    ul.price-table-chart li:nth-child(2) .price_table-button {
+        border-color: rgba(255, 255, 255, 0.27) !important;
+    }
