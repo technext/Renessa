@@ -1,26 +1,8 @@
 @import url(omnes-pro.css);
 @import url(http://fonts.googleapis.com/css?family=Coda);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
-
-
-@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
 @import url(http://fonts.googleapis.com/css?family=Raleway);
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic);
-
-
-/*@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
-@import url(http://fonts.googleapis.com/css?family=Alegreya);
-@import url(http://fonts.googleapis.com/css?family=Kreon:700);
-@import url(http://fonts.googleapis.com/css?family=Glegoo);
-@import url(http://fonts.googleapis.com/css?family=Berkshire+Swash);
-@import url(http://fonts.googleapis.com/css?family=Philosopher);
-@import url(http://fonts.googleapis.com/css?family=Tinos);
-@import url(http://fonts.googleapis.com/css?family=Bitter);
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:200);
-@import url(http://fonts.googleapis.com/css?family=Merriweather);
-@import url(http://fonts.googleapis.com/css?family=Lora);
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic);
-@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);*/
+@import url(http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600);
 
 /*======================================================================================================
                             Global
@@ -144,12 +126,6 @@ li a
 .main_content 
 {
     padding: 50px 0px;
-}
-
-img
-{
-    max-width: 100%;
-    height: auto;
 }
 
 iframe
@@ -362,7 +338,6 @@ hr
 }
 #team .team-members h4
 {
-    font-family: 'Titillium Web', sans-serif;
     font-weight: 600;
     margin-bottom: 5px;
 }
@@ -803,7 +778,7 @@ form
 .logo h1
 {
     color: #F2F2F2;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
 }
 .copyright
@@ -1080,4 +1055,16 @@ form
 
     ul.price-table-chart li:nth-child(2) .price_table-button {
         border-color: rgba(255, 255, 255, 0.27) !important;
+    }
+
+    .main_content figure {
+        padding: 0px 105px;
+    }
+
+    .post-shadow {
+        width: 100%;
+    }
+
+    .input-group-addon {
+        background-color: rgba(238, 238, 238, 0);
     }
